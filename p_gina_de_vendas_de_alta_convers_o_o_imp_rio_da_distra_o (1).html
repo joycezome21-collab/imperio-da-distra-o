@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Império da Distração — Página Oficial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cream: '#faf9f6',
+                            white: '#ffffff',
+                            primary: '#0f2f2e',
+                            dark: '#0c2423',
+                            accent: '#10b981',
+                            accentMuted: 'rgba(16, 185, 129, 0.08)',
+                            slateDark: '#1e293b',
+                            slateMuted: '#64748b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom progress bar utility */
+        .glow-button {
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-slateDark font-sans selection:bg-brand-accent selection:text-white">
+
+    <div class="bg-brand-dark text-emerald-300 py-2.5 px-4 text-center text-xs sm:text-sm font-semibold tracking-wide border-b border-emerald-950/40 relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2">
+            <span><i class="fa-solid fa-clock mr-1.5 animate-pulse"></i> ATENÇÃO: Preço promocional de R$ 15,00 expira em:</span>
+            <span id="countdown" class="bg-brand-primary/80 px-2 py-0.5 rounded border border-emerald-800 text-white font-mono">14:59</span>
+        </div>
+    </div>
+
+    <header class="relative bg-brand-primary text-brand-cream py-16 lg:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_120%,rgba(16,185,129,0.15),transparent_50%)]"></div>
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            
+            <span class="inline-flex items-center gap-2 bg-emerald-900/40 text-brand-accent text-xs sm:text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 border border-emerald-800/50">
+                <i class="fa-solid fa-circle-check text-brand-accent text-[10px]"></i> Livro Digital Best-Seller de Resgate Mental
+            </span>
+            
+            <h1 class="serif-font text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl mx-auto text-white">
+                Você abre o celular para ver uma mensagem... <span class="italic font-normal text-emerald-400">e 40 minutos depois</span>, percebe que perdeu o controle da sua vida.
+            </h1>
+            
+            <p class="mt-6 text-stone-300 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                Sabe aquele cansaço pesado que você sente ao deitar a cabeça no travesseiro? <strong class="text-brand-accent">Ele não é físico.</strong> É o seu cérebro exausto, fritando silenciosamente em um mundo que não para de gritar.
+            </p>
+
+            <div class="mt-10 flex flex-col items-center justify-center gap-4">
+                <a href="#payment-section" class="glow-button inline-flex items-center gap-3 bg-brand-accent text-brand-primary font-bold text-base sm:text-lg px-8 py-4 sm:py-5 rounded-full transition-all text-center w-full sm:w-auto">
+                    QUERO RECUPERAR MEU FOCO E MINHA PAZ AGORA <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <span class="text-xs text-stone-400 flex items-center gap-1.5">
+                    <i class="fa-solid fa-shield-halved text-brand-accent"></i> Pagamento 100% Seguro • Entrega Imediata
+                </span>
+            </div>
+
+            <div class="mt-16 relative mx-auto max-w-lg lg:max-w-xl">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 opacity-30 blur-xl"></div>
+                <div class="relative bg-brand-dark/90 border border-emerald-800/50 rounded-2xl p-6 sm:p-8 shadow-2xl flex flex-col md:flex-row items-center gap-6 text-left">
+                    <div class="w-full md:w-2/5 flex justify-center">
+                        <div class="relative w-36 h-48 bg-emerald-950 rounded shadow-lg overflow-hidden border border-emerald-500/30 flex flex-col justify-between p-4 transform hover:-rotate-3 transition-transform duration-300">
+                            <div class="absolute -right-6 -top-6 w-16 h-16 bg-brand-accent/20 rounded-full blur"></div>
+                            <div>
+                                <span class="text-[9px] uppercase tracking-widest font-bold text-brand-accent block">O Livro Digital</span>
+                                <h4 class="serif-font text-base font-bold italic text-white mt-1 leading-tight">O Império da Distração</h4>
+                            </div>
+                            <div class="border-t border-emerald-800/50 pt-2 flex items-center justify-between text-[10px] text-stone-400">
+                                <span>Edição Completa</span>
+                                <i class="fa-solid fa-feather text-brand-accent"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-3/5 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-1 text-amber-400 text-xs mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-stone-300 text-xs ml-1 font-semibold">(4.9/5)</span>
+                        </div>
+                        <h3 class="serif-font text-xl font-bold text-white mb-2">Edição de Luxo Expandida</h3>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            Acesso imediato com 7 capítulos recheados de dados analíticos, organogramas, calculadora de tempo de tela e o famoso Desafio Prático de 7 Dias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-wider bg-emerald-50 border border-emerald-100 px-3.5 py-1 rounded-full">Sinais de Alerta</span>
+            <h2 class="serif-font text-3xl sm:text-4xl font-bold text-brand-primary mt-3">Você está vivendo ou apenas reagindo às notificações?</h2>
+            <p class="text-brand-slateMuted mt-3 text-sm sm:text-base max-w-lg mx-auto">Selecione abaixo os sintomas que você tem sentido ultimamente para fazer um teste rápido de saúde mental:</p>
+        </div>
+
+        <div class="bg-white border border-stone-200 rounded-2xl p-6 sm:p-8 shadow-md">
+            <h3 class="text-lg font-bold text-brand-primary mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-clipboard-question text-brand-accent"></i> Checklist de Autoavaliação Mental
+            </h3>
+            <div class="space-y-3.5" id="symptom-checker">
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-stone-50 transition-colors cursor-pointer" onclick="toggleDiagnosticBox('symptom-1')">
+                    <input type="checkbox" id="symptom-1" class="w-5 h-5 accent-brand-accent rounded mt-0.5 cursor-pointer" onchange="calculateDiagnosis()">
+                    <label for="symptom-1" class="text-sm text-stone-700 cursor-pointer select-none">
+                        <strong>Coceira Psicológica:</strong> Tenta ler ou focar em algo e, em menos de dois minutos, sente uma necessidade quase incontrolável de abrir outra rede social.
+                    </label>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-stone-50 transition-colors cursor-pointer" onclick="toggleDiagnosticBox('symptom-2')">
+                    <input type="checkbox" id="symptom-2" class="w-5 h-5 accent-brand-accent rounded mt-0.5 cursor-pointer" onchange="calculateDiagnosis()">
+                    <label for="symptom-2" class="text-sm text-stone-700 cursor-pointer select-none">
+                        <strong>Presença Roubada:</strong> Mesmo cercado pelas pessoas que ama na mesa de jantar ou lazer, sua mente insiste em habitar uma linha do tempo fria no celular.
+                    </label>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-stone-50 transition-colors cursor-pointer" onclick="toggleDiagnosticBox('symptom-3')">
+                    <input type="checkbox" id="symptom-3" class="w-5 h-5 accent-brand-accent rounded mt-0.5 cursor-pointer" onchange="calculateDiagnosis()">
+                    <label for="symptom-3" class="text-sm text-stone-700 cursor-pointer select-none">
+                        <strong>Dependência do Abstrato:</strong> Sente que gasta energia vital correndo atrás de curtidas, visualizações ou notificações fúteis que te deixam vazio logo em seguida.
+                    </label>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-stone-50 transition-colors cursor-pointer" onclick="toggleDiagnosticBox('symptom-4')">
+                    <input type="checkbox" id="symptom-4" class="w-5 h-5 accent-brand-accent rounded mt-0.5 cursor-pointer" onchange="calculateDiagnosis()">
+                    <label for="symptom-4" class="text-sm text-stone-700 cursor-pointer select-none">
+                        <strong>Sono Comprometido:</strong> Deita-se exausto para dormir, mas passa mais de uma hora rolando feed sob a luz azul intensa no quarto escuro.
+                    </label>
+                </div>
+            </div>
+
+            <div id="diagnostic-result" class="mt-6 p-4 rounded-xl bg-brand-cream border border-stone-200 flex flex-col md:flex-row items-center justify-between gap-4 transition-all">
+                <div>
+                    <p class="text-xs font-bold text-brand-slateMuted uppercase tracking-wider">Status do seu Foco:</p>
+                    <h4 id="diagnostic-status" class="text-lg font-bold text-brand-primary mt-1">Marque as opções acima para analisar</h4>
+                </div>
+                <div id="diagnostic-badge" class="px-4 py-1.5 rounded-full text-xs font-bold bg-stone-200 text-stone-600">0% de Sobrecarga</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-16 px-6 border-y border-stone-200/60">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="serif-font text-3xl font-bold text-brand-primary leading-tight">O roubo implacável dos momentos que nunca mais voltam.</h2>
+                    <p class="text-brand-slateMuted text-sm sm:text-base mt-4 leading-relaxed text-justify">
+                        Enquanto você navega por timelines frias e absorve vidas perfeitas de mentira no visor do celular, a vida real passa do outro lado da tela.
+                    </p>
+                    <p class="text-brand-slateMuted text-sm sm:text-base mt-4 leading-relaxed text-justify">
+                        Os anos correm, seus filhos crescem, os momentos em família tornam-se silêncios partilhados em aparelhos eletrônicos. Tornamo-nos profundamente dependentes de um universo fictício, deixando os abraços calorosos e conversas reais para depois.
+                    </p>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" alt="Conversa de família carinhosa na mesa sem eletrônicos" class="w-full h-72 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                        <p class="text-white text-xs italic">"Substituir o visor de 6 polegadas pelo olhar sincero de quem amamos é o primeiro passo para resgatar nossa sanidade."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-wider bg-emerald-50 border border-emerald-100 px-3.5 py-1 rounded-full">A Solução Definitiva</span>
+            <h2 class="serif-font text-3xl sm:text-4xl font-bold text-brand-primary mt-3">Uma mentoria profunda em forma de livro digital</h2>
+            <p class="text-brand-slateMuted mt-3 text-sm sm:text-base max-w-lg mx-auto">Este livro não prega utopias irrealistas. É um mapa tático e de acolhimento profundo para reeducar sua atenção.</p>
+        </div>
+
+        <div class="space-y-3">
+            <!-- Capitulo 1 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-1')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">01</span>
+                        Cap. 1: A Prisão Invisível e a Epidemia do Tempo
+                    </span>
+                    <i id="icon-cap-1" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-1" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    Neste capítulo introdutório, desmascaramos a nossa ilusão de controle sobre o relógio. Analisamos com dados reais o peso do tempo de tela e como a nossa incapacidade crônica de tolerar cinco segundos de tédio deprime a nossa mente criativa.
+                </div>
+            </div>
+
+            <!-- Capitulo 2 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-2')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">02</span>
+                        Cap. 2: Neuroquímica do Vício: A Cilada da Dopamina Barata
+                    </span>
+                    <i id="icon-cap-2" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-2" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    A ciência por trás do feed infinito. Investigamos os gatilhos invisíveis e loops neuroquímicos que sequestram as tomadas de decisões racionais do seu cérebro para mantê-lo viciado em dopamina artificial de baixo valor.
+                </div>
+            </div>
+
+            <!-- Capitulo 3 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-3')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">03</span>
+                        Cap. 3: O Roubo do Afeto: O Impacto nas Relações Reais
+                    </span>
+                    <i id="icon-cap-3" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-3" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    Uma análise tocante sobre o fenômeno sociológico do *phubbing* (ignorar quem está ao lado para olhar para a tela). Estratégias para reconquistar a profundidade no diálogo com seus entes queridos.
+                </div>
+            </div>
+
+            <!-- Capitulo 4 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-4')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">04</span>
+                        Cap. 4: O Mito da Multitarefa e o Declínio Cognitivo
+                    </span>
+                    <i id="icon-cap-4" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-4" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    Por que a ideia de ser multitarefa é uma falácia neurológica. Aprenda sobre o conceito de "resíduo de atenção" e como o hábito de saltar entre aplicativos sabota seus estudos, sua carreira e seu cérebro.
+                </div>
+            </div>
+
+            <!-- Capitulo 5 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-5')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">05</span>
+                        Cap. 5: O Escudo Mental: O Protocolo Antidistração
+                    </span>
+                    <i id="icon-cap-5" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-5" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    Guia arquitetônico de proteção mental: como reconfigurar seus eletrônicos (como a Escala de Cinza) e barreiras de atrito físicas para neutralizar impulsos automáticos inconscientes.
+                </div>
+            </div>
+
+            <!-- Capitulo 6 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-6')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">06</span>
+                        Cap. 6: A Dieta Digital: Estratégias Práticas para Desintoxicar
+                    </span>
+                    <i id="icon-cap-6" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-6" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    O manual definitivo do Desafio Prático de 7 dias com tarefas estruturadas passo a passo para reabilitar seus receptores de dopamina e apreciar os prazeres do mundo físico.
+                </div>
+            </div>
+
+            <!-- Capitulo 7 -->
+            <div class="border border-stone-200 rounded-xl bg-white overflow-hidden transition-all duration-300">
+                <button onclick="toggleAccordion('cap-7')" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-brand-primary hover:bg-stone-50 transition-colors">
+                    <span class="flex items-center gap-3.5 text-sm sm:text-base">
+                        <span class="w-8 h-8 rounded-full bg-emerald-50 text-brand-accent flex items-center justify-center font-bold text-xs">07</span>
+                        Cap. 7: Construindo uma Rotina Intencional
+                    </span>
+                    <i id="icon-cap-7" class="fa-solid fa-chevron-down text-brand-slateMuted transition-transform duration-300"></i>
+                </button>
+                <div id="content-cap-7" class="hidden p-5 border-t border-stone-100 text-sm text-brand-slateMuted leading-relaxed text-justify bg-brand-cream/30">
+                    Aprenda a diferença drástica entre viver de forma reativa e construir um cotidiano focado na intencionalidade. O impacto profundo da paz nas suas primeiras e últimas horas do dia.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#0f2f2e] text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Apenas R$ 15,00?</span>
+                <h2 class="serif-font text-3xl sm:text-4xl font-bold mt-2">O Investimento mais ridículo que você fará este ano</h2>
+                <p class="text-stone-300 text-sm mt-3 max-w-lg mx-auto">Vamos analisar de forma nua e crua onde você normalmente investe essa quantia:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-brand-dark/50 border border-red-900/30 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block bg-red-950 text-red-400 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">Gasto Comum</span>
+                        <h4 class="serif-font text-xl font-bold text-stone-100">Café com Pão de Queijo na Esquina</h4>
+                        <p class="text-sm text-stone-400 mt-2 text-justify">
+                            Custa em média 15 a 18 reais. Satisfaz o estômago por exatos 15 minutos e não muda absolutamente nada na sua inteligência, saúde mental ou rotina futura.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-red-900/20 text-red-400 font-bold text-lg flex items-center justify-between">
+                        <span>Preço: R$ 15,00</span>
+                        <span class="text-xs font-normal">Valor duradouro: Zero</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-dark/80 border border-emerald-500/30 p-6 rounded-2xl flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute right-0 top-0 bg-brand-accent text-brand-primary text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-bl-xl shadow-lg">Investimento de Foco</div>
+                    <div>
+                        <span class="inline-block bg-emerald-950 text-brand-accent text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">Seu eBook Oficial</span>
+                        <h4 class="serif-font text-xl font-bold text-white">Manual O Império da Distração</h4>
+                        <p class="text-sm text-emerald-100/80 mt-2 text-justify">
+                            Um guia terapêutico com 7 capítulos completos que vai clarear sua mente, aliviar a ansiedade digital, resgatar o foco e devolver horas do seu dia com sua família.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-emerald-500/20 text-brand-accent font-bold text-lg flex items-center justify-between">
+                        <span>Preço: R$ 15,00</span>
+                        <span class="text-xs font-normal text-white">Valor duradouro: Inestimável</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-wider bg-emerald-50 border border-emerald-100 px-3.5 py-1 rounded-full">Depoimentos Reais</span>
+            <h2 class="serif-font text-3xl font-bold text-brand-primary mt-3">Histórias de quem já resgatou o controle</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-brand-primary">MA</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-brand-primary">Mateus Albuquerque</h4>
+                        <span class="text-xs text-brand-slateMuted">Anfitrião do Desafio de 7 Dias</span>
+                    </div>
+                </div>
+                <p class="text-sm text-brand-slateMuted text-justify leading-relaxed">
+                    "O capítulo 5 mudou totalmente o meu rendimento profissional. Colocar o telefone na escala de cinza parece uma bobagem, mas de fato aniquila o apelo visual do celular. Passei a ler livros de verdade de novo."
+                </p>
+            </div>
+
+            <div class="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-brand-primary">CR</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-brand-primary">Camila Rocha</h4>
+                        <span class="text-xs text-brand-slateMuted">Mãe e Empreendedora</span>
+                    </div>
+                </div>
+                <p class="text-sm text-brand-slateMuted text-justify leading-relaxed">
+                    "Meus jantares com meus filhos eram cheios de pausas para responder mensagens profissionais sem importância. O eBook me fez cair a ficha da gravidade disso. Hoje o celular fica na gaveta na hora da refeição. Valor inestimável."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment-section" class="bg-brand-cream border-t border-stone-200/60 py-16 px-6">
+        <div class="max-w-3xl mx-auto bg-white border border-stone-200 rounded-2xl p-8 sm:p-12 shadow-xl text-center relative overflow-hidden">
+            
+            <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-emerald-400 via-teal-500 to-emerald-600"></div>
+
+            <h3 class="serif-font text-3xl sm:text-4xl font-bold text-brand-primary">Chegou o momento de recuperar sua mente</h3>
+            <p class="text-brand-slateMuted mt-4 max-w-md mx-auto text-sm sm:text-base">
+                Invista o preço de um café para resgatar sua clareza de volta. Sua mente e sua família agradecem.
+            </p>
+
+            <div class="my-8 inline-flex flex-col items-center justify-center">
+                <div class="flex items-baseline gap-2">
+                    <span class="text-xs text-brand-slateMuted font-bold uppercase tracking-wider">Apenas</span>
+                    <span class="text-5xl font-extrabold text-brand-primary">R$ 15,00</span>
+                </div>
+                <span class="text-xs text-emerald-600 font-semibold mt-1 bg-emerald-50 px-3 py-0.5 rounded-full border border-emerald-100">
+                    Acesso imediato e vitalício
+                </span>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Botão de simulação de Checkout (Kiwify Link) -->
+                <a href="https://pay.kiwify.com.br/Uo5444D"
+   target="_blank"
+   class="glow-button inline-flex items-center justify-center gap-3 bg-brand-accent text-brand-primary font-bold text-lg px-8 py-5 rounded-full w-full">
+   ADQUIRIR MEU MANIFESTO DE RESGATE
+   <i class="fa-solid fa-arrow-right"></i>
+</a>
+                <div class="text-xs text-brand-slateMuted flex flex-wrap items-center justify-center gap-4 pt-2">
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-lock text-emerald-600"></i> Pagamento Seguro</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-file-pdf text-emerald-600"></i> PDF Interativo Otimizado</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-heart text-emerald-600"></i> Satisfação Garantida</span>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-stone-100 pt-8 flex flex-col sm:flex-row items-center gap-6 text-left">
+                <div class="w-20 h-20 flex-shrink-0 mx-auto sm:mx-0 flex items-center justify-center bg-emerald-50 border border-emerald-100 text-brand-accent text-3xl rounded-full">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h4 class="font-bold text-brand-primary text-base">Garantia Blindada de Satisfação</h4>
+                    <p class="text-xs text-brand-slateMuted mt-1 leading-relaxed text-justify">
+                        Queremos seu resgate focado, não o seu arrependimento. Leia o eBook, aplique o desafio por 7 dias. Se você achar que o material não trouxe valor, devolvemos seu investimento integralmente. Sem burocracia, sem perguntas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-3xl mx-auto">
+        <h2 class="serif-font text-2xl sm:text-3xl font-bold text-brand-primary text-center mb-10">Dúvidas Frequentes</h2>
+        <div class="space-y-4">
+            <div class="bg-white border border-stone-200 rounded-xl p-5">
+                <h4 class="font-bold text-brand-primary text-sm sm:text-base">Como recebo o livro após a compra?</h4>
+                <p class="text-xs sm:text-sm text-brand-slateMuted mt-2 text-justify">
+                    De forma imediata! Assim que o seu pagamento de R$ 15,00 for compensado, a plataforma enviará automaticamente os dados de acesso por e-mail para você fazer o download do arquivo digital (PDF interativo e otimizado).
+                </p>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl p-5">
+                <h4 class="font-bold text-brand-primary text-sm sm:text-base">É seguro pagar online?</h4>
+                <p class="text-xs sm:text-sm text-brand-slateMuted mt-2 text-justify">
+                    Absolutamente seguro. Todas as transações são encriptadas de ponta a ponta e processadas pelas maiores e mais respeitadas plataformas de infoprodutos do Brasil (como a Kiwify).
+                </p>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl p-5">
+                <h4 class="font-bold text-brand-primary text-sm sm:text-base">Posso revender esse eBook?</h4>
+                <p class="text-xs sm:text-sm text-brand-slateMuted mt-2 text-justify">
+                    Sim! Você pode se cadastrar no nosso programa de afiliação de forma gratuita na Kiwify e vender para amigos ou nas suas redes sociais, ganhando até 60% de comissão por indicação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-stone-300 py-12 px-6 border-t border-emerald-950/40 text-center">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-left">
+                <h3 class="serif-font text-lg font-bold italic text-white">O Império da Distração</h3>
+                <p class="text-xs text-stone-400 mt-1">Todos os direitos reservados • Edição de Resgate 2026</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4 text-xs">
+                <a href="#" class="hover:text-white transition-colors">Termos de Uso</a>
+                <span>•</span>
+                <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+                <span>•</span>
+                <a href="#payment-section" class="bg-emerald-950 hover:bg-emerald-900 border border-emerald-800 text-brand-accent px-4.5 py-2 rounded-full font-bold transition-all">
+                    Seja Afiliado (Comissão 60%)
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sistema de acordeão interativo para a estrutura dos capítulos
+        function toggleAccordion(capId) {
+            const content = document.getElementById('content-' + capId);
+            const icon = document.getElementById('icon-' + capId);
+            const allContents = document.querySelectorAll('[id^="content-cap-"]');
+            const allIcons = document.querySelectorAll('[id^="icon-cap-"]');
+
+            const isAlreadyOpen = !content.classList.contains('hidden');
+
+            // Fecha todos os acordeões primeiro
+            allContents.forEach(item => item.classList.add('hidden'));
+            allIcons.forEach(item => {
+                item.classList.remove('rotate-180');
+            });
+
+            // Se não estava aberto, abre o selecionado
+            if (!isAlreadyOpen) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            }
+        }
+
+        // Sistema dinâmico para simular a compra (Placeholder)
+        function handlePurchase() {
+            // Se estivesse integrado, aqui redirecionaria para o checkout da Kiwify
+            alert("Redirecionando para o ambiente seguro de pagamento Kiwify...\n(Preço promocional fixado: R$ 15,00)");
+        }
+
+        // Checklist de sintomas e exibição dinâmica de sobrecarga digital
+        function toggleDiagnosticBox(id) {
+            const checkbox = document.getElementById(id);
+            if (checkbox) {
+                checkbox.checked = !checkbox.checked;
+                calculateDiagnosis();
+            }
+        }
+
+        function calculateDiagnosis() {
+            const symptoms = document.querySelectorAll('#symptom-checker input[type="checkbox"]');
+            let checkedCount = 0;
+
+            symptoms.forEach(box => {
+                if (box.checked) checkedCount++;
+            });
+
+            const percent = Math.round((checkedCount / symptoms.length) * 100);
+            
+            const badge = document.getElementById('diagnostic-badge');
+            const status = document.getElementById('diagnostic-status');
+            const resultBox = document.getElementById('diagnostic-result');
+
+            if (checkedCount === 0) {
+                badge.innerText = "0% de Sobrecarga";
+                badge.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-stone-200 text-stone-600";
+                status.innerText = "Mente livre de sintomas aparentes";
+            } else if (checkedCount <= 2) {
+                badge.innerText = `${percent}% de Sobrecarga`;
+                badge.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800";
+                status.innerText = "Sintomas iniciais detectados. Alerta moderado.";
+            } else {
+                badge.innerText = `${percent}% de Sobrecarga`;
+                badge.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-red-100 text-red-800 animate-pulse";
+                status.innerText = "Atenção em estado crítico. Exaustão iminente!";
+            }
+        }
+
+        // Cronômetro dinâmico regressivo de escassez (15 minutos)
+        function startTimer() {
+            let timer = 14 * 60 + 59;
+            const display = document.getElementById('countdown');
+            
+            const countdownInterval = setInterval(() => {
+                let minutes = parseInt(timer / 60, 10);
+                let seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = 15 * 60; // Reinicia para manter o loop de escassez persuasivo
+                }
+            }, 1000);
+        }
+
+        // Executa as configurações na carga da página
+        window.addEventListener('load', () => {
+            startTimer();
+            // Abre o primeiro capítulo por padrão no acordeão
+            toggleAccordion('cap-1');
+        });
+    </script>
+</body>
+</html>
